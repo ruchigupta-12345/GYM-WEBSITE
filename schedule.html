@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Schedule</title>
+  <style>
+  
+body {
+    
+    font-family: Arial, sans-serif;
+    margin: 3px;
+    padding: 14px;
+    border-radius: 2px;
+   border-color: #080808;
+  
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+.section img{
+    width: 100%;
+    height: 100%;
+    
+}
+
+.section-heading h2 {
+    color: #020202;
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.section-heading p {
+    color: #080808;
+    font-size: 18px;
+
+}
+
+
+.schedule-table table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-left: -60px;
+}
+
+.schedule-table th, .schedule-table td {
+    padding: 27px;
+    text-align: left;
+    border-bottom: 4px solid #222020;
+}
+
+.schedule-table th {
+    background-color: #383535;
+    color: #9b9595;
+}
+
+.schedule-table tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+    color: #555252;
+}
+
+
+.schedule-filter {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+}
+
+.schedule-filter li {
+    display: inline-block;
+    margin-right: 10px;
+    cursor: pointer;
+    color: #0c0909;
+}
+
+.schedule-filter li.active {
+    font-weight: bold;
+    color: #f44336;
+}
+
+/* Hide/show classes based on filter */
+.filtering {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.ts-item {
+    display: none;
+}
+
+.ts-item.show {
+    display: table-cell;
+}
+
+  </style>
+<section class="section" id="schedule">
+    
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6 offset-lg-3">
+                <div class="section-heading dark-bg">
+                    <h2> <em> Classes Schedule</em></h2>
+                    <p>We believe in offering a diverse range of classes to cater to all fitness levels and interests. Our classes are designed to help you achieve your fitness goals, whether you're a beginner looking to get started or an experienced athlete aiming to push your limits. Explore our class offerings below and find the perfect fit for your fitness journey!</p>
+                </div>
+            </div>
+        </div>
+        
+            <div class="col-lg-10 offset-lg-1">
+                <div class="schedule-table filtering">
+                    <table>
+                        <tr>
+                            <th>Day/Period</th>
+                            <th>I<br>7:00-8:00</th>
+                            <th>II<br>9:00-10:00</th>
+                            <th>III<br>10:00-11:00</th>
+                            <th>12:00-12:40</th>
+                            <th>IV<br>12:40-1:30</th>
+                            <th>V<br>1:30-2:20</th>
+                            <th>VI<br>2:20-3:10</th>
+                            <th>VII<br>3:10-4:00</th>
+                        </tr>
+                        <tr>
+                            <td class="highlight"><b>Monday</b></td>
+                            <td>PARK ABS/STRENGTH</td>
+                            <td>PARK POWER WORKOUT</td>
+                            <td>PARK YOGA</td>
+                            <td rowspan="6" class="special"><b>Break</b></td>
+                            <td >ZOMBA</td>
+                            <td>ARMS WORKOUT</td>
+                            <td> LEGS WORKOUT</td>
+                            <td>STRECHING</td>
+                        </tr>
+                        <tr>
+                            <td class="highlight"><b>Tuesday</b></td>
+                            <td >CARDIO</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>PARK YOGA</td>
+                            <td>TREADMILL</td>
+                            <td>ARMS WORKOUT</td>
+                            <td class="special">HITT</td>
+                        </tr>
+                        <tr>
+                            <td class="highlight"><b>Wednesday</b></td>
+                            <td>YOGA</td>
+                            <td>SPINNIG</td>
+                            <td>PILATES</td>
+                            <td>SUYOGA</td>
+                            <td >BOXING</td>
+                            <td>-</td>
+                            <td>-</td>
+                        </tr>
+                        <tr>
+                            <td class="highlight"><b>Thursday</b></td>
+                            <td>PILATES</td>
+                            <td>BOXING</td>
+                            <td>YOGA</td>
+                            <td >PARK ABS /STRENGTH</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                        </tr>
+                        <tr>
+                            <td class="highlight"><b>Friday</b></td>
+                            <td colspan="3" class="special">ZOMBA</td>
+                            <td>SPINNING</td>
+                            <td>DANCE</td>
+                            <td>ARMS </td>
+                            <td>WEIGHT LIFTING</td>
+                        </tr>
+                        <tr>
+                            <td class="highlight"><b>Saturday</b></td>
+                            <td>WEIGHT LIFTING</td>
+                            <td>DUMBELL LIFTING</td>
+                            <td>LEGS WORKOUT</td>
+                            <td colspan="3">SEMINAR</td>
+                            <td class="special">CARDIO</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

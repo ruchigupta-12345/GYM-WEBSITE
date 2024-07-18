@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gym Classes</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+            color: #0a0a0a;
+        }
+        header {
+            background-color: #0f0e0e;
+            color: white;
+            padding: 1rem 0;
+            text-align: center;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+        
+        nav ul li {
+            display: inline;
+            margin: 0 10px;
+        }
+        
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+        }
+        
+        h1, h2 {
+            margin: 0.5em 0;
+        }
+        
+        main {
+            padding: 2rem;
+        }
+        
+        .class-item {
+            background-color: white;
+            padding: 1rem;
+            margin: 1rem 0;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(99, 96, 96, 0.1);
+        }
+        
+        footer {
+            background-color: #0c0b0b;
+            color: white;
+            text-align: center;
+            padding: 1rem 0;
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+        }
+       
+    table.scrolldown {
+        width: 100%;
+
+        /* border-collapse: collapse; */
+        border-spacing: 0;
+        border: 2px solid rgb(158, 157, 157);
+    }
+
+    /* To display the block as level element */
+    table.scrolldown tbody,
+    table.scrolldown thead {
+        display: block;
+    }
+
+    thead tr th {
+        height: 40px;
+        line-height: 40px;
+    }
+
+    table.scrolldown tbody {
+
+        /* Set the height of table body */
+        height: 50px;
+
+        /* Set vertical scroll */
+        overflow-y: auto;
+
+        /* Hide the horizontal scroll */
+        overflow-x: hidden;
+    }
+
+    tbody {
+        border-top: 2px solid rgb(116, 113, 113);
+    }
+
+    tbody td,
+    thead th {
+        width: 367px;
+        border-right: 2px solid rgb(172, 168, 168);
+    }
+
+    td {
+        text-align: center;
+    }
+        
+    </style>
+</head>
+<body>
+    
+    <header>
+    	 
+        <h1>Gym Classes</h1>
+        <nav>
+            <table class="scrolldown">
+
+                <!-- Table head content -->
+                <thead>
+                    <tr>
+                        <th>CLASSES</th>
+                        <th>WORKOUT</th>
+                        <th>TIME</th>
+                        <th>INSTRUCTOR</th>
+                        <th>HOURS</th>
+                    </tr>
+                </thead>
+        
+                <!-- Table body content -->
+                <tbody>
+                    <tr>
+                        <td>classes 1</td>
+                        <td>TREADMILL</td>
+                        <td> 8:00</td>
+                        <td>MR. SUNIL</td>
+                        <td> 2hrs</td>
+                    </tr>
+        
+                    <tr>
+                        <td>classes 2</td>
+                        <td>LEGS</td>
+                        <td>9:00</td>
+                        <td>MR. ROHAN</td>
+                        <td> 2hrs</td>
+                    </tr>
+                    <tr>
+                        <td>classes 3</td>
+                        <td>ARMS</td>
+                        <td>10:00</td>
+                        <td>MRS.SUHANI</td>
+                        <td>1hrs</td>
+                    </tr>
+                    <tr>
+                        <td>classes 4</td>
+                        <td>WEIGHT LIFT</td>
+                        <td> 1:00</td>
+                        <td>MR.KARAN</td>
+                        <td>2hrs</td>
+                    </tr>
+                    <tr>
+                        <td>classes 5</td>
+                        <td>FULL BODY</td>
+                        <td> 3:00</td>
+                        <td>MRS. ROSHANI</td>
+                        <td>3hrs</td>
+                    </tr>
+                </tbody>
+            </table>
+        </nav>
+    </header>
+    <main>
+        <section id="class-list">
+            <h2>Available Classes</h2>
+            <div class="class-item" data-day="Monday">
+                <h3>Yoga</h3>
+                <p>Time: 8:00 AM - 9:00 AM</p>
+                <p>Instructor: Jane Doe</p>
+            </div>
+            <div class="class-item" data-day="Wednesday">
+                <h3>HIIT</h3>
+                <p>Time: 6:00 PM - 7:00 PM</p>
+                <p>Instructor: John Smith</p>
+            </div>
+            <div class="class-item" data-day="Friday">
+                <h3>Pilates</h3>
+                <p>Time: 5:00 PM - 6:00 PM</p>
+                <p>Instructor: Mary Johnson</p>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Gym Name. All rights reserved.</p>
+    </footer>
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const classItems = document.querySelectorAll(".class-item");
+        
+            classItems.forEach(item => {
+                item.addEventListener("click", () => {
+                    alert(`You clicked on ${item.querySelector("h3").textContent}`);
+                });
+            });
+        });
+        
+    </script>
+</body>
+</html>

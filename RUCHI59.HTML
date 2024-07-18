@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gym Website</title>
+  <link rel="stylesheet" href="styles.css">
+ <style>
+    *{
+        margin: 0;
+        padding: 0;
+        font-family: Arial, sans-serif;
+        box-sizing: border-box;
+      }
+      .container{
+        width: 100%;
+        height: 100vh;
+        background-image: linear-gradient();
+        position: relative;
+        padding: 0 5%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      nav{
+        width: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        padding: 20px 8%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+
+nav ul li{
+    list-style: none;
+    display: inline-block;
+    margin-left: 50px;
+    
+}
+nav ul li a{
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+}
+.content{
+    text-align: center;
+}
+.content h1{
+    font-size: 80px;
+    color:rgb(238, 230, 230);
+    font-weight: 600;
+    margin-top: 250px;
+    transition: 0.5s;
+    margin-left: 20px;
+
+}
+.content h1 :hover{
+  -webkit-text-stroke: 2px red;
+  color: transparent;
+
+}
+.content a{
+    text-decoration: none;
+    display:inline-block;
+    font-size: 24px;
+    border:2px solid;
+    padding: 14px 70px;
+    border-radius: 50px;
+    margin-top: 100px;
+    background-color: black;
+    color: white;
+}
+.back-video{
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+
+}
+@media (min-aspect-ratio:16/9){
+  .back-video{
+    width: auto;
+    height: 118%;
+}
+footer {
+  
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+  margin-top: 380px;
+  width: 100%;
+}
+}
+</style>
+</head>
+<body>
+  <div class="conatiner">
+    <video autoplay loop muted plays-inline class="back-video">
+        <source src="gym1 video.mp4" type="video/mp4"> 
+    </video>
+    <nav>
+        <img src="" class="">
+        <ul>
+            <li><a href ="./ruchi60.html">HOME/LOGIN</a></li>
+            <li><a href ="./about.html">ABOUT </a></li>
+            <li><a href ="./classes.html">CLASSES</a></li>
+            <li><a href ="./schedule.html">SCHEDULE</a></li>
+            <li><a href ="./contactus.html">CONTACT US</a></li>
+            <li><a href="./gym.html" >GYM GALLERY</a></li>
+           
+        </ul>
+    </nav>
+    <div class="content">
+        <h1>FIT FLEX FITNESS</h1>
+        <a href="/ruchi60.html">BECOME MEMBER</a>
+    </div>
+  </div>
+  <footer>
+    <p>&copy; 2024 Your Gym Name. All rights reserved.</p>
+</footer>
+
+  
+</body>
+</html>
